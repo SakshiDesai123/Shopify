@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Bazaar | Authentic Indian Products</title>
+    <meta name="description" content="Discover authentic Indian products including traditional clothing, accessories, and more at Bharat Bazaar.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-store"></i>
+                        <span>Bharat Bazaar</span>
+                    </a>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li class="dropdown">
+                            <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Traditional Wear</a></li>
+                                <li><a href="#">Jewelry</a></li>
+                                <li><a href="#">Home Decor</a></li>
+                                <li><a href="#">Spices</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="action-icons">
+                        <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+                        <a href="#" class="icon-link"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="icon-link cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Traditional Wear</a></li>
+                <li><a href="#">Kurtas</a></li>
+                <li>Traditional Indian Cotton Kurta</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Product Page -->
+    <main class="product-page">
+        <div class="container">
+            <div class="product-container">
+                <!-- Product Gallery -->
+                <section class="product-gallery">
+                    <div class="main-image-container">
+                        <div class="main-image">
+                            <img id="main-product-img" src="assets/images/red .jpg" alt="Traditional Indian Cotton Kurta - Blue">
+                            <div class="image-zoom"></div>
+                        </div>
+                        <div class="product-badges">
+                            <span class="badge new">New</span>
+                            <span class="badge popular">Popular</span>
+                        </div>
+                    </div>
+                    
+                    <div class="thumbnail-container">
+                        <button class="thumbnail-nav prev" aria-label="Previous thumbnails">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="thumbnails">
+                            <div class="thumbnail active" data-image="assets/images/kurta-blue.jpg">
+                                <img src="assets/images/white kurta.jpg" alt="Kurta Front View">
+                            </div>
+                            <div class="thumbnail" data-image="assets/images/kurta-side.jpg">
+                                <img src="assets/images/kurta.jpg" alt="Kurta Side View">
+                            </div>
+                            <div class="thumbnail" data-image="assets/images/kurta-back.jpg">
+                                <img src="assets/images/yellow kurta .jpg" alt="Kurta Back View">
+                            </div>
+                            
+                        </div>
+                        <button class="thumbnail-nav next" aria-label="Next thumbnails">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Product Details -->
+                <section class="product-details">
+                    <div class="product-header">
+                        <h1 class="product-title">Traditional Indian Cotton Kurta</h1>
+                        <div class="product-price">
+                            <span class="current-price">₹1,299</span>
+                            <span class="original-price">₹1,799</span>
+                            <span class="discount">Save 28%</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-value">4.5</span>
+                            <a href="#reviews" class="review-count">(128 Reviews)</a>
+                        </div>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Experience comfort and style with our traditional Indian cotton kurta. Made from 100% premium cotton, this kurta features intricate embroidery and a comfortable fit perfect for any occasion.</p>
+                    </div>
+
+                    <!-- Product Variants -->
+                    <div class="product-variants">
+                        <!-- Color Variant -->
+                        <div class="variant-group color-variant">
+                            <div class="variant-header">
+                                <label>Color: <span id="selected-color">Blue</span></label>
+                                <button class="compare-colors-btn" id="compare-colors-btn">
+                                    <i class="fas fa-compress-alt"></i> Compare Colors
+                                </button>
+                            </div>
+                            <div class="variant-options">
+                                <div class="variant-option color-option active" data-color="Blue" data-value="blue" style="background-color: #1e3a8a;"></div>
+                                <div class="variant-option color-option" data-color="Red" data-value="red" style="background-color: #dc2626;"></div>
+                                <div class="variant-option color-option" data-color="Green" data-value="green" style="background-color: #16a34a;"></div>
+                                <div class="variant-option color-option" data-color="Yellow" data-value="yellow" style="background-color: #f59e0b;"></div>
+                                <div class="variant-option color-option" data-color="Purple" data-value="purple" style="background-color: #7e22ce;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Size Variant -->
+                        <div class="variant-group size-variant">
+                            <div class="variant-header">
+                                <label>Size: <span id="selected-size">M</span></label>
+                                <button class="size-chart-btn" id="size-chart-btn">
+                                    <i class="fas fa-ruler"></i> Size Chart
+                                </button>
+                            </div>
+                            <div class="variant-options">
+                                <div class="variant-option size-option" data-size="S">S</div>
+                                <div class="variant-option size-option active" data-size="M">M</div>
+                                <div class="variant-option size-option" data-size="L">L</div>
+                                <div class="variant-option size-option" data-size="XL">XL</div>
+                                <div class="variant-option size-option" data-size="XXL">XXL</div>
+                            </div>
+                        </div>
+
+                        <!-- Quantity Selector -->
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn decrease" id="decrease-qty">-</button>
+                                <input type="number" class="quantity-input" id="quantity" value="1" min="1" max="10">
+                                <button class="quantity-btn increase" id="increase-qty">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-secondary buy-now">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                        <button class="btn btn-outline wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Product Features -->
+                    <div class="product-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>1 Year Warranty</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping across India</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-undo"></i>
+                            <span>7 Days Easy Return</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-credit-card"></i>
+                            <span>EMI Options Available</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Pair Well With Section -->
+            <section class="pair-well-section">
+                <div class="section-header">
+                    <h2 class="section-title">Pair Well With</h2>
+                    <p>Complete your traditional look with these accessories</p>
+                </div>
+                <div class="pair-well-container">
+                    <div class="pair-product">
+                        <div class="product-image">
+                            <img src="assets/images/chudidar dress.jpg" alt="Churidar Pants">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Churidar Pants</h3>
+                            <div class="product-price">₹899</div>
+                            <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pair-product">
+                        <div class="product-image">
+                            <img src="assets/images/dupatta.jpg" alt="Designer Dupatta">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Designer Dupatta</h3>
+                            <div class="product-price">₹599</div>
+                            <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pair-product">
+                        <div class="product-image">
+                            <img src="assets/images/mojadis.jpg" alt="Traditional Mojaris">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Traditional Mojaris</h3>
+                            <div class="product-price">₹1,299</div>
+                            <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pair-product">
+                        <div class="product-image">
+                            <img src="assets/images/jw.jpg" alt="Traditional Jewellery Set">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Traditional Jewellery Set</h3>
+                            <div class="product-price">₹2,499</div>
+                            <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product Bundle Section -->
+            <section class="bundle-section">
+                <div class="bundle-header">
+                    <h2 class="section-title">Complete Traditional Look Bundle</h2>
+                    <p>Save ₹500 when you buy these products together</p>
+                </div>
+                
+                <div class="bundle-content">
+                    <div class="bundle-products">
+                        <div class="bundle-product">
+                            <div class="product-image">
+                                <img src="assets/images/kurta.jpg" alt="Cotton Kurta">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Cotton Kurta</h3>
+                                <div class="product-price">₹1,299</div>
+                            </div>
+                            <div class="plus-icon">+</div>
+                        </div>
+                        
+                        <div class="bundle-product">
+                            <div class="product-image">
+                                <img src="assets/images/chudidar dress.jpg" alt="Churidar Pants">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Churidar Pants</h3>
+                                <div class="product-price">₹899</div>
+                            </div>
+                            <div class="plus-icon">+</div>
+                        </div>
+                        
+                        <div class="bundle-product">
+                            <div class="product-image">
+                                <img src="assets/images/dupatta.jpg" alt="Designer Dupatta">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Designer Dupatta</h3>
+                                <div class="product-price">₹599</div>
+                            </div>
+                            <div class="plus-icon">+</div>
+                        </div>
+                        
+                        <div class="bundle-product">
+                            <div class="product-image">
+                                <img src="assets/images/mojadis.jpg" alt="Traditional Mojaris">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Traditional Mojaris</h3>
+                                <div class="product-price">₹1,299</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bundle-summary">
+                        <div class="bundle-pricing">
+                            <div class="original-total">
+                                <span>Original Price:</span>
+                                <span>₹4,096</span>
+                            </div>
+                            <div class="bundle-discount">
+                                <span>Bundle Discount:</span>
+                                <span>-₹500</span>
+                            </div>
+                            <div class="bundle-total">
+                                <span>Bundle Price:</span>
+                                <span>₹3,596</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary add-bundle-btn">
+                            <i class="fas fa-cart-plus"></i> Add Complete Bundle to Cart
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product Tabs Section -->
+            <section class="product-tabs-section">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="information">Product Information</button>
+                    <button class="tab-btn" data-tab="shipping">Shipping & Returns</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-content active" id="description">
+                        <h3>Product Description</h3>
+                        <p>Our traditional Indian cotton kurta is crafted from 100% premium cotton, ensuring breathability and comfort throughout the day. The fabric is soft against the skin and perfect for India's diverse climate.</p>
+                        
+                        <h4>Features:</h4>
+                        <ul>
+                            <li>Made from 100% premium cotton</li>
+                            <li>Intricate hand embroidery detailing</li>
+                            <li>Comfortable straight fit</li>
+                            <li>Available in multiple colors and sizes</li>
+                            <li>Machine washable</li>
+                        </ul>
+                        
+                        <h4>Care Instructions:</h4>
+                        <p>Machine wash cold with similar colors. Tumble dry low. Do not bleach. Iron on low heat.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="information">
+                        <h3>Product Information</h3>
+                        <table class="product-info-table">
+                            <tr>
+                                <td><strong>Material</strong></td>
+                                <td>100% Cotton</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fit</strong></td>
+                                <td>Regular Fit</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Length</strong></td>
+                                <td>Knee Length</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Neck</strong></td>
+                                <td>Mandarin Collar</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sleeve</strong></td>
+                                <td>Full Sleeve</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pattern</strong></td>
+                                <td>Embroidered</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Occasion</strong></td>
+                                <td>Casual, Festive, Daily Wear</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Country of Origin</strong></td>
+                                <td>India</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-content" id="shipping">
+                        <h3>Shipping & Returns</h3>
+                        <h4>Shipping Information:</h4>
+                        <ul>
+                            <li>Free standard shipping across India</li>
+                            <li>Express delivery available at additional cost</li>
+                            <li>Estimated delivery time: 3-7 business days</li>
+                            <li>We ship to all major cities and towns in India</li>
+                        </ul>
+                        
+                        <h4>Return Policy:</h4>
+                        <ul>
+                            <li>7-day easy return policy</li>
+                            <li>Items must be in original condition with tags attached</li>
+                            <li>Return shipping is free for defective or wrong items</li>
+                            <li>Refunds will be processed within 3-5 business days</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="overall-rating">
+                                <div class="rating-value">4.5</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="review-count">Based on 128 reviews</div>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span>5 stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 70%;"></div>
+                                    </div>
+                                    <span>70%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 20%;"></div>
+                                    </div>
+                                    <span>20%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 5%;"></div>
+                                    </div>
+                                    <span>5%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 3%;"></div>
+                                    </div>
+                                    <span>3%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1 star</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 2%;"></div>
+                                    </div>
+                                    <span>2%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-list">
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="reviewer">Rahul Sharma</div>
+                                    <div class="review-date">October 15, 2023</div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-title">Perfect fit and comfortable</div>
+                                <div class="review-content">
+                                    <p>I absolutely love this kurta! The fabric is so comfortable and the fit is perfect. The embroidery is beautifully done. Will definitely purchase again.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="reviewer">Priya Patel</div>
+                                    <div class="review-date">October 10, 2023</div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-title">Good quality but size runs small</div>
+                                <div class="review-content">
+                                    <p>The quality of the fabric is excellent and the design is beautiful. However, I found that the size runs a bit small. I would recommend ordering one size up.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Products Section -->
+            <section class="related-products-section">
+                <div class="section-header">
+                    <h2 class="section-title">You May Also Like</h2>
+                </div>
+                <div class="related-products-grid">
+                    <div class="product-card">
+                        <div class="product-badge new">New</div>
+                        <div class="product-image">
+                            <img src="assets/images/silk.jpg" alt="Silk Embroidered Kurta">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Silk Embroidered Kurta</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹2,499</span>
+                                <span class="original-price">₹3,199</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(64)</span>
+                            </div>
+                            <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-badge popular">Popular</div>
+                        <div class="product-image">
+                            <img src="assets/images/cotton.JPG" alt="Linen Summer Kurta">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Linen Summer Kurta</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹1,799</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                            <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/design.JPG" alt="Designer Kurta Set">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Designer Kurta Set</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹3,299</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-count">(42)</span>
+                            </div>
+                            <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/casual.jpg" alt="Printed Casual Kurta">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Printed Casual Kurta</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹1,099</span>
+                                <span class="original-price">₹1,499</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(156)</span>
+                            </div>
+                            <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-store"></i>
+                        <span>Bharat Bazaar</span>
+                    </div>
+                    <p class="footer-description">
+                        Your one-stop destination for authentic Indian products. We bring you the finest traditional wear and accessories from across India.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Men's Collection</a></li>
+                        <li><a href="#">Women's Collection</a></li>
+                        <li><a href="#">Kids' Collection</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Fashion Street, Mumbai, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@bharatbazaar.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        &copy; 2025 Sakshi Desai. All rights reserved.
+                    </div>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2 class="cart-title">Your Cart</h2>
+            <button class="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>₹0</span>
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn-primary">Proceed to Checkout</button>
+                <button class="btn btn-outline">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Size Chart Modal -->
+    <div class="modal" id="size-chart-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Size Chart</h2>
+            <p>Find your perfect fit with our size guide. All measurements are in inches.</p>
+            
+            <table class="size-chart-table">
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Chest</th>
+                        <th>Waist</th>
+                        <th>Length</th>
+                        <th>Sleeve Length</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S</td>
+                        <td>38"</td>
+                        <td>36"</td>
+                        <td>40"</td>
+                        <td>23"</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>40"</td>
+                        <td>38"</td>
+                        <td>42"</td>
+                        <td>24"</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>42"</td>
+                        <td>40"</td>
+                        <td>44"</td>
+                        <td>25"</td>
+                    </tr>
+                    <tr>
+                        <td>XL</td>
+                        <td>44"</td>
+                        <td>42"</td>
+                        <td>46"</td>
+                        <td>26"</td>
+                    </tr>
+                    <tr>
+                        <td>XXL</td>
+                        <td>46"</td>
+                        <td>44"</td>
+                        <td>48"</td>
+                        <td>27"</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>How to Measure:</h3>
+            <ul>
+                <li><strong>Chest:</strong> Measure around the fullest part of your chest</li>
+                <li><strong>Waist:</strong> Measure around your natural waistline</li>
+                <li><strong>Length:</strong> Measure from the highest point of the shoulder to the desired length</li>
+                <li><strong>Sleeve:</strong> Measure from the shoulder seam to the wrist</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Compare Colors Modal -->
+    <div class="modal" id="compare-colors-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Compare Colors</h2>
+            <p>Select two or more colors to compare them side by side.</p>
+            
+            <div class="compare-colors-container">
+                <div class="compare-color-option">
+                    <div class="compare-color-swatch" style="background-color: #1e3a8a;"></div>
+                    <div class="compare-color-name">Blue</div>
+                </div>
+                <div class="compare-color-option">
+                    <div class="compare-color-swatch" style="background-color: #dc2626;"></div>
+                    <div class="compare-color-name">Red</div>
+                </div>
+                <div class="compare-color-option">
+                    <div class="compare-color-swatch" style="background-color: #16a34a;"></div>
+                    <div class="compare-color-name">Green</div>
+                </div>
+                <div class="compare-color-option">
+                    <div class="compare-color-swatch" style="background-color: #f59e0b;"></div>
+                    <div class="compare-color-name">Yellow</div>
+                </div>
+                <div class="compare-color-option">
+                    <div class="compare-color-swatch" style="background-color: #7e22ce;"></div>
+                    <div class="compare-color-name">Purple</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/localStorage.js"></script>
+</body>
+</html>
